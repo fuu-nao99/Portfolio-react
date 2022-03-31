@@ -1,0 +1,94 @@
+@media (max-width: 800px){
+    /* Top */
+    .top-container {
+        background: linear-gradient(90deg, #F6F6F6 0%, #F6F6F6 50%, #282828 50%, #282828 100%);
+        position: relative;
+        width: 100%;
+    }
+
+    .top-content #first{
+        box-sizing: border-box;
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        margin-right: 30px;
+        color: #F6F6F6;
+        font-size: 80px;
+        z-index: 2;
+    }
+
+    .top-content #last{
+        box-sizing: border-box;
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 20%;
+        left: 60%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        margin-right: 30px;
+        color: #F6F6F6;
+        font-size: 80px;
+        z-index: 2;
+    }
+
+    .top-content p {
+        position: absolute;
+        top: 20%;
+        left: 0%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        margin:0 0 0 10px;
+        color: #858585;
+        font-size: 20px;
+        font-family: 'rubik';
+        z-index: 2;
+    }
+
+    .top-content img {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        width: 55%;
+    }
+    /* end of Top */
+
+    /* profile */
+    .profile h1{
+        padding: 6rem 0 40px 0;
+    }
+
+    .profile-content {
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+
+    .profile-img {
+        min-height: 0%;
+        margin-left: 0%;
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+
+    .profile-text  {
+        font-family: 'f910';
+        font-size: 18px;
+        color: #c0c0c0;
+        width: 100%;
+        text-align: center;
+    }
+    /* end of Profile */
+};
+
+  
