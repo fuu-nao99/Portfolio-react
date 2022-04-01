@@ -11,7 +11,7 @@ import Works from './Components/Works';
 
 function App() {
   return (
-    
+    <div className="App">
       <React.Fragment>
         <Navbar />
         <Top />
@@ -21,7 +21,7 @@ function App() {
         <Contact />
         <Footer />
       </React.Fragment>
-    
+    </div>
   );        
 }
 

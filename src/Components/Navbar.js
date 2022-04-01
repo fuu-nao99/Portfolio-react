@@ -33,7 +33,6 @@ export default function Navbar() {
     text-decoration : none;
   `;
 
-
   return (
     <div className="navbar">
       <nav
@@ -45,7 +44,7 @@ export default function Navbar() {
           textDecoration: "none",
         }}
       >
-        <ul>
+        <ul className="nav-links">
           <li>
             <Link className={hoverStyle} smooth to="#home">
               Top
@@ -72,6 +71,7 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
+
       </nav>
     </div>
   );

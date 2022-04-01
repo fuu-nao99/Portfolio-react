@@ -5,7 +5,7 @@ import TopImage from '../Images/top_img.jpg'
 import { makeStyles } from '@material-ui/core/styles'
 import Link from '@material-ui/core/Link'
 import MailIcon from '@material-ui/icons/Mail'
-import TwitterIcon from '@material-ui/icons/Twitter'
+import InstagramIcon from '@material-ui/icons/Instagram'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import Avatar from '@material-ui/core/Avatar'
 
@@ -44,21 +44,21 @@ const Top = () => {
                     <div className="fade-in-top">
                         <ul>
                             <li>
-                                <Link href='#'>
+                                <Link href='https://mail.google.com/mail/?view=cm&to=1gk8250n@komazawa-u.ac.jp'>
                                     <Avatar className={classes.color}>
                                         <MailIcon />
                                     </Avatar>
                                 </Link>
                             </li>
                             <li>
-                                <Link href='#'>
+                                <Link href='https://www.instagram.com/aijuswanafiiling/'>
                                     <Avatar className={classes.color}>
-                                        <TwitterIcon />
+                                        <InstagramIcon />
                                     </Avatar>            
                                 </Link>
                             </li>
                             <li>
-                                <Link href='#' >
+                                <Link href='https://github.com/fuu-nao99' >
                                     <Avatar className={classes.color}>
                                         <GitHubIcon />
                                     </Avatar>
