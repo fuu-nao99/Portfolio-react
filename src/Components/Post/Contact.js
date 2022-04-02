@@ -9,6 +9,7 @@ import ErrorButton from "../Utils/ErrorButton";
 import {useWindowDimensions} from '../windowSize';
 
 
+
 const useStyles = makeStyles(theme => ({
   backdrop: {
     color: "#fff"
@@ -16,12 +17,12 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Contact = () => {
+
   const { width, height } = useWindowDimensions();
 
   const classes = useStyles();
   const [progress, setProgress] = useState(false);
 
-  /* SnackBarの状態管理(ReduxやContextでやる方がいい) */
   const [status, setStatus] = React.useState({
     open: false,
     type: "success",
@@ -34,7 +35,6 @@ const Contact = () => {
     setStatus({ ...status, open: false });
   };
 
-  /* 通信中であれば、formを非表示にし、スピナーを表示する */
   let form = (
     <Backdrop className={classes.backdrop} open={progress}>
       <CircularProgress color="inherit" />

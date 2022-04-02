@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../App.css'
 import {useWindowDimensions} from './windowSize'
 import TopImage from '../Images/top_img.jpg'
@@ -8,6 +8,8 @@ import MailIcon from '@material-ui/icons/Mail'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import Avatar from '@material-ui/core/Avatar'
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
 const Top = () => {
     const { width, height } = useWindowDimensions();
     const classes = useStyles();
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
 
     return (
         <div className="top" id="home">
@@ -36,7 +41,7 @@ const Top = () => {
                 <div className="top-content">
                     <h1 id="last">Fujimura</h1>
                     <h1 id="first">Naoki</h1>
-                    <p>Welcome to My Portfolio Site</p>
+                    <p data-aos="fade-left" >Welcome to My Portfolio Site</p>
                     <img src={TopImage} alt="TopImage" />
                 </div>
 

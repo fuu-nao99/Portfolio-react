@@ -1,19 +1,25 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import MyIcon from '../Images/my_avatar.jpg'
 import {useWindowDimensions} from './windowSize'
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
 const Profile = () => {
   const { width, height } = useWindowDimensions();
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+}, []);
+
   return (
     <div className="profile" id="profile" style={{ width: width, height: height }}>
-      <h1>Profile</h1>
+      <h1 data-aos="fade-up">Profile</h1>
         <div className="profile-content">
-          <div className="profile-img">
+          <div data-aos="fade-up" className="profile-img">
             <img src={MyIcon} alt="MyIcon" />
           </div>
-          <div className="profile-text">
+          <div data-aos="fade-up" className="profile-text">
             <p>藤村 直樹</p>
             <p>Naoki Fujimura</p>
             <br></br>

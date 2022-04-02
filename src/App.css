@@ -110,11 +110,6 @@
 }
 
 .top-content p {
-  opacity: 0;
-  animation-name: fadein;
-  animation-duration: 1.0s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
   position: absolute;
   top: 20%;
   left: 10%;
@@ -124,18 +119,8 @@
   margin:0 0 0 10px;
   color: #858585;
   font-size: 30px;
-  font-family: 'rubik';
+  font-family: 'f910';
   z-index: 2;
-}
-@keyframes fadein {
-  0% {
-     opacity: 0;
-     transform: translateY(0em);
-  }
-  100% {
-     opacity: 1;
-     transform: translateY(0px);
-  }
 }
 
 .top-content img {
